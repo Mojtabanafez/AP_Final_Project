@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PV {
-    private User user1;
-    private User user2;
+    private User sender;
+    private User receiver;
     private List <Massage> massages = new ArrayList<>();
 }

@@ -3,20 +3,19 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User{
-    private List <Group> groups = new ArrayList<>();
-    private List <PV> pvs = new ArrayList<>();
+public class User {
+    private List<Group> groups = new ArrayList<>();
+    private List<PV> pvs = new ArrayList<>();
     private String name;
-    private  String lastName;
+    private String lastName;
     private String email;
     private String userName;
-    private  String password;
+    private String password;
     private String profileAddress;
     private Integer id;
 
-
     @Override
-    public String toString() {
+    public String toString(){
         return "User{" +
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -26,6 +25,7 @@ public class User{
                 ", profileAddress='" + profileAddress + '\'' +
                 '}';
     }
+
     public void setGroups(List<Group> groups) {
         this.groups = groups;
     }
@@ -33,11 +33,12 @@ public class User{
     public void setId(Integer id) {
         this.id = id;
     }
+
     public Integer getId() {
         return id;
     }
-    public void setPvs(List<PV> pvs) {
-        this.pvs = pvs;
+
+    public void setPvs(List<PV> pvs) {this.pvs = pvs;
     }
 
     public void setName(String name) {

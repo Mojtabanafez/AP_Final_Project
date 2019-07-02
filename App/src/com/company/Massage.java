@@ -36,7 +36,6 @@ public class Massage {
 
     public void setId(Integer id) {
         this.id = id;
-
     }
 
     @Override
@@ -44,7 +43,7 @@ public class Massage {
         return "Massage{" +
                 "text='" + text + '\'' +
                 ", date='" + date + '\'' +
-                ", id=" + id +
+                ", id=" + id +" sender:"+user.getName()+
                 '}';
     }
 }

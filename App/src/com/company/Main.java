@@ -1,18 +1,35 @@
 package com.company;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
+
 import java.util.List;
 
-public class Main {
+public class Main  {
     public static void main(String[] args){
-        MassageManager massageManager = new MassageManager();
-        Massage massage =new Massage();
+        Group group = new Group();
+        group.setName("CE Engineering 4");
+        GroupManager groupManager =new GroupManager();
+       // groupManager.Insert(group);
+       // groupManager.Delete(1);
+        Group newGroup = new Group();
+        newGroup.setId(3);
+        newGroup.setName("Electrical Engineering");
+        groupManager.Upadate(newGroup);
+        System.out.println(groupManager.getGroup(3));
+
+        //  MassageManager massageManager = new MassageManager();
+      // System.out.println(massageManager.getAllMassage());
+      /*  Massage massage =new Massage();
+        UserManager userManager = new UserManager();
+        massage.setUser(userManager.getUser(13));
         massage.setDate("1988/05/04");
         massage.setText("sfdhjhjfklds;kajfjkldsa\nsdfsfd");
-        //massageManager.Insert(massage);
+        massageManager.Insert(massage);
         //massageManager.Delete(1);
         //System.out.println(massageManager.getMassage(3));
-
-
+*/
+/*
         Massage newMassage = massageManager.getMassage(4);
         newMassage.setText("In THe name Of God");
         massageManager.Update(newMassage);
@@ -30,7 +47,8 @@ public class Main {
 
 
         // Example for UserManager:
-      /*  User user =new User();
+      */
+        /*User user =new User();
         user.setPassword("46511");
         user.setEmail("sfjdk@gmail.com");
         user.setName("Ali");
@@ -42,16 +60,16 @@ public class Main {
         //userManager.Delete(4);
 
         //System.out.println(userManager.getUser(2));
-
-        User newUser = userManager.getUser(2);
+*/
+      /*  User newUser = userManager.getUser(2);
         newUser.setName("Mamad Jangi");
         userManager.Update(newUser);
-
+*/
 
 
        // List<User> userList =userManager.getAllUser();
        // for(User a: userList)
        //     System.out.println(a);
-    */
+
     }
 }

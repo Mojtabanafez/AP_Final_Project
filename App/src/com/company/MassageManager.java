@@ -9,9 +9,10 @@ public class MassageManager {
     public void Insert(Massage massage){
         try{
             PreparedStatement ps =DBConnector.getConnection().prepareStatement(
-              "insert into massage (text,date) values (?,?)");
+              "insert into massage (text,date,user_id) values (?,?,?)");
             ps.setString(1,massage.getText());
             ps.setString(2,massage.getDate());
+            ps.setInt(3,massage.getUser().getId());
             ps.execute();
             System.out.println("Inserted@@");
             ps.close();
@@ -41,10 +42,12 @@ public class MassageManager {
                     ("select * from massage where id=?");
             ps.setInt(1,id);
             ResultSet rs =ps.executeQuery();
+            UserManager userManager =new UserManager();
            while (rs.next()){
                 result.setId(rs.getInt("id"));
                result.setText(rs.getString("text"));
                result.setDate(rs.getString("date"));
+               result.setUser(userManager.getUser(rs.getInt("user_id")));
            }
             ps.execute();
             System.out.println("read from db");
@@ -62,11 +65,13 @@ public class MassageManager {
             PreparedStatement ps =DBConnector.getConnection().prepareStatement(
               "select * from massage");
             ResultSet rs = ps.executeQuery();
+            UserManager userManager =new UserManager();
             while (rs.next()){
                 Massage result = new Massage();
                 result.setId(rs.getInt("id"));
                 result.setText(rs.getString("text"));
-                result.setDate(rs.getString("date"));
+                result.setDate(rs.getString("date"));result.setUser(userManager.getUser(rs.getInt("user_id")));
+
                 massages.add(result);
             }
 
