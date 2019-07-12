@@ -2,21 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bde4f15-d5ff-4952-8ea5-4b5505e6bca8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/AP_Final_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AP_Final_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Massage.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Massage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/MassageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/MassageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/PV.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/PV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/DBConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/GroupManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/Massage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/MassageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/PV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/SignUp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/SignUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/ff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/user_group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/out/production/AP_Final_Project/com/company/user_groupManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/DBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/GroupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/GroupManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/Massage.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/Massage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/MassageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/MassageManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/PV.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/PV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/SignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/com/company/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/ff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/user_group.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/user_group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/com/company/user_groupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/com/company/user_groupManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +48,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/App/src/com/company/SignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/com/company/MassageManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,91 +68,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/SignUp.java">
+        <entry file="file://$PROJECT_DIR$/App/src/com/company/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/com/company/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/com/company/company.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/ff.java">
+        <entry file="file://$PROJECT_DIR$/App/src/module-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/GroupManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/PV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#toString#0;class#User#0" />
-                <element signature="method#setPvs#0;class#User#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/user_group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="e#141#142#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/user_groupManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -134,35 +110,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/com/company/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/com/company/Massage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding>
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,7 +125,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="package-info" />
+        <option value="module-info" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -191,30 +145,46 @@
       <list>
         <option value="$PROJECT_DIR$/App/src/com/company/DBManager.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/DBController.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/DBConnector.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/Chat.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/UserManager.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/Massage.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/MassageManager.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/Group.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/ElementCollection.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/GroupManager.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/user_group.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/user_groupManager.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/PV.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/User.java" />
-        <option value="$PROJECT_DIR$/App/src/com/company/Login.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/SignUp.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/Massage.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/package-info.java" />
         <option value="$PROJECT_DIR$/App/src/com/company/ff.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/main.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignUp/SignUp.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/sample.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/com.company.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignUp/SignupController.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignUp/SignupController.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignUp/SignUp.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignupController.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/SignupController.java" />
+        <option value="$PROJECT_DIR$/App/src/com/Sign/Sign.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/Sign/SignUp.java" />
+        <option value="$PROJECT_DIR$/App/src/messenger/GroupManager.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/Group.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/Login.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/User.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/PV.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/DBConnector.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/user_group.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/Sign.fxml" />
+        <option value="$PROJECT_DIR$/App/src/com/company/company.fxml" />
+        <option value="$PROJECT_DIR$/App/src/module-info.java" />
+        <option value="$PROJECT_DIR$/App/src/com/company/MassageManager.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
-    <option name="y" value="25" />
+    <option name="y" value="27" />
     <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -222,7 +192,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +215,14 @@
               <item name="AP_Final_Project" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AP_Final_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AP_Final_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -256,14 +233,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/localRepository/PostgreSQL/postgresql-42.2.6.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/localRepository/kotlin-stdlib-1.3.40.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App/src/com/company" />
+      <recent name="$PROJECT_DIR$/App/src/messenger" />
+      <recent name="$PROJECT_DIR$/App/src/com/company/SignUp" />
+      <recent name="$PROJECT_DIR$/App/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,13 +263,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ff">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Login" />
       <module name="AP_Final_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,12 +277,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="AP_Final_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,11 +298,11 @@
       </method>
     </configuration>
     <configuration name="SignUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.SignUp" />
+      <option name="MAIN_CLASS_NAME" value="company.SignUp" />
       <module name="AP_Final_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -329,7 +315,7 @@
       <module name="AP_Final_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -339,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ff" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.SignUp" />
+        <item itemvalue="Application.ff" />
         <item itemvalue="Application.SignUp (1)" />
         <item itemvalue="Application.Login" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -361,10 +347,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
-    <editor active="true" />
+    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12451577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34846765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,7 +361,7 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32721382" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3261339" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -397,7 +382,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3802497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16989486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -408,8 +393,8 @@
       <window_info id="Project Explorer" order="8" weight="0.3291714" />
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32721382" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3261339" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,7 +420,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/App/src/com/company/User.java</url>
-          <line>72</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -453,10 +438,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/DBConnector.java">
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/ElementCollection.java" />
+    <entry file="jar://$USER_HOME$/jdk/jdk-12.0.1_linux-x64_bin/jdk-12.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="376">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk/jdk-12.0.1_linux-x64_bin/jdk-12.0.1/lib/src.zip!/java.base/sun/launcher/LauncherHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="1050" column="29" selection-start-line="1050" selection-start-column="29" selection-end-line="1050" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/javafx.fxml.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1935">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/ff.java" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/main.fxml" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/SignUp/SignUp.fxml" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/sample.fxml" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/com.company.fxml" />
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/SignupController.fxml" />
+    <entry file="file://$PROJECT_DIR$/App/App.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/application/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/PV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/user_groupManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#User#0" />
+            <element signature="method#setPvs#0;class#User#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/user_group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/Massage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/GroupManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -473,159 +570,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/MassageManager.java">
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/Sign.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+        <state relative-caret-position="165">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/SignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/ElementCollection.java" />
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/Login.java">
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="105" column="13" lean-forward="true" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/jdk/jdk-12.0.1_linux-x64_bin/jdk-12.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk/jdk-12.0.1_linux-x64_bin/jdk-12.0.1/lib/src.zip!/java.base/sun/launcher/LauncherHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="1050" column="29" selection-start-line="1050" selection-start-column="29" selection-end-line="1050" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/GroupManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/PV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#toString#0;class#User#0" />
-            <element signature="method#setPvs#0;class#User#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/user_group.java">
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/company.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/user_groupManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/com/company/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/Massage.java">
+    <entry file="file://$PROJECT_DIR$/App/src/com/company/MassageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state>
           <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/com/company/SignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/com/company/ff.java">
+    <entry file="file://$PROJECT_DIR$/App/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -646,6 +660,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -668,7 +683,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>12</last-edited>
+          <last-edited>12 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
