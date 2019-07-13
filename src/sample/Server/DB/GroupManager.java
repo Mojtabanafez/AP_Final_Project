@@ -21,7 +21,8 @@ public class GroupManager {
             e.printStackTrace();
             System.out.println("Can not inserted!!!");
         }
-    }public void Delete(int id){
+    }
+    public void Delete(int id){
         try{
             PreparedStatement ps = DBConnector.getConnection().prepareStatement(
                     "delete from groups where id=?");

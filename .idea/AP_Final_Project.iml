@@ -29,5 +29,26 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.base" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.controls" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.fxml" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.graphics" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.media" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.swing" />
+          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.web" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

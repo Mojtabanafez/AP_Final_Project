@@ -9,14 +9,59 @@ import javafx.stage.Stage;
 import sample.View.SignUp;
 import sample.View.Sign_In;
 
+import java.io.IOException;
+import java.net.Socket;
+import java.util.Formatter;
+import java.util.Scanner;
 
-public class Main extends Application {
+public class Main extends Application implements Runnable{
     public static int number;
+    static Socket socket;
+
+    static {
+        try {
+            socket = new Socket("127.0.0.1", 1978);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    static Scanner socketIn;
+
+    static {
+        try {
+            socketIn = new Scanner(socket.getInputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    static Formatter socketOut;
+
+    static {
+        try {
+            socketOut = new Formatter(socket.getOutputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void run() {
+        try {
+            do {
+                String received = socketIn.next();
+                System.out.println("received: " + received);
+            } while (true);
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+    }
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("View/sample.fxml"));
-
         switch (number) {
             case 0: {
                 primaryStage.setTitle("Registration Form JavaFX Application");
@@ -32,20 +77,28 @@ public class Main extends Application {
                 primaryStage.setTitle("Registration Form JavaFX Application");
                 Sign_In sign_in = new Sign_In();
                 GridPane gridPane = sign_in.createRegistrationFormPane();
-                sign_in.addUIControls(gridPane , primaryStage );
+                sign_in.addUIControls(gridPane, primaryStage);
                 Scene scene = new Scene(gridPane, 800, 900);
                 primaryStage.setScene(scene);
                 primaryStage.show();
             }
             break;
-            case 2:{
+            case 2: {
                 System.out.println("welcome to telegram  @@@ $$ #");
-            }break;
+            }
+            break;
             default:
                 System.out.println("nothing!!!!");
         }
     }
-
+    public void SendMassage(String massage) {
+        try {
+            socketOut.format(massage + "\n");
+            socketOut.flush();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+    }
     public static void main(String[] args) {
         launch(args);
     }

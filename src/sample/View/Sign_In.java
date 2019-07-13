@@ -12,6 +12,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import sample.Main;
@@ -55,6 +57,24 @@ public class Sign_In extends Application {
         PasswordField passwordField = new PasswordField();
         passwordField.setPrefHeight(40);
         gridPane.add(passwordField, 1, 1);
+
+        Hyperlink changePage =  new Hyperlink("Click here");
+        changePage.setOnAction(event -> {
+            Main.number=0;
+            primaryStage.close();
+            try {
+                Main main=new Main();
+                main.start(primaryStage);
+            } catch (Exception e) {
+                System.out.println("Mojjtaba");
+                e.printStackTrace();
+            }
+            return;
+        });
+
+        TextFlow flow = new TextFlow(new Text("Don't have an account? "), changePage);
+        flow.setPadding(new Insets(120));
+        gridPane.add(flow,1,7);
 
         // Add Submit Button
         Button submitButton = new Button("Submit");

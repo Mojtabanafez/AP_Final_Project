@@ -12,6 +12,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import sample.Main;
@@ -74,6 +76,23 @@ public class SignUp extends Application {
         passwordField.setPrefHeight(40);
         gridPane.add(passwordField, 1, 5);
 
+        Hyperlink changePage =  new Hyperlink("Click here");
+        changePage.setOnAction(event -> {
+            Main.number=1;
+            primaryStage.close();
+            try {
+                Main main=new Main();
+                main.start(primaryStage);
+            } catch (Exception e) {
+                System.out.println("Mojjtaba");
+                e.printStackTrace();
+            }
+            return;
+        });
+
+        TextFlow flow = new TextFlow(new Text("if You have an account >> "), changePage);
+        flow.setPadding(new Insets(120));
+        gridPane.add(flow,1,7);
         // Add Submit Button
         Button submitButton = new Button("Submit");
         submitButton.setPrefHeight(40);
@@ -106,18 +125,14 @@ public class SignUp extends Application {
             }
             showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Registration Successful!", "Welcome " + nameField.getText());
 
-            User user = new User();
-            user.setEmail(emailField.getText());
-            user.setLastName(LastNameField.getText());
-            user.setPassword(passwordField.getText());
-            user.setUserName(userNameField.getText());
-            user.setName(nameField.getText());
-            UserManager userManager = new UserManager();
-            userManager.Insert(user);
+
+            Main main=new Main();
+            String Information = "SignUp" + "^" + emailField.getText() + "^" + LastNameField.getText() + "^" + passwordField.getText() + "^" + userNameField.getText() + "^" + nameField.getText();
+            main.SendMassage(Information);
+
             Main.number=2;
             primaryStage.close();
             try {
-                Main main=new Main();
                 main.start(primaryStage);
             } catch (Exception e) {
                 System.out.println("Mojjtaba");
