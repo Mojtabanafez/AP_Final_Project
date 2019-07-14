@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MassageManager {
-    public void Insert(Massage massage){
+    public void Insert (Massage massage){
         try{
             PreparedStatement ps = DBConnector.getConnection().prepareStatement(
               "insert into massage (text,date,user_id) values (?,?,?)");

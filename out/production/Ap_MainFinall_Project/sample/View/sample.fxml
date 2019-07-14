@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.999-ea" fx:controller="sample.View.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.999-ea" fx:controller="sample.View.Tests.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />

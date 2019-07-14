@@ -2,7 +2,6 @@ package sample;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Formatter;
 import java.util.Scanner;
 
@@ -40,8 +39,9 @@ public class Client extends Thread {
     @Override
     public void run() {
         try {
+            System.out.println("run client!!");
             do {
-                String received = socketIn.next();
+                String received = socketIn.nextLine();
                 System.out.println("received: " + received);
             } while (true);
         } catch (Exception e) {
@@ -51,13 +51,14 @@ public class Client extends Thread {
 
 
     public static void main(String[] args) {
-
         try {
             Scanner systemIn = new Scanner(System.in);
             String next;
+            Thread client = new Client();
+            client.start();
             do {
                 next = systemIn.next();
-                socketOut.format(next + "\n");
+                socketOut.format(next);
                 socketOut.flush();
                 String received = socketIn.next();
                 System.out.println("received: " + received);

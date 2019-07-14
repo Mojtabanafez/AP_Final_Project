@@ -31,8 +31,8 @@ public class DBTester  {
         newMassage.setText("In THe name Of God");
         massageManager.Update(newMassage);
         List<Massage>massages= massageManager.getAllMassage();
-        for(Massage a: massages)
-            System.out.println(a);
+        for(Massage pauseForCorrectAnswerInSignIn: massages)
+            System.out.println(pauseForCorrectAnswerInSignIn);
         // Example for UserManager:
       */
         /*User user =new User();
@@ -54,8 +54,8 @@ public class DBTester  {
 
 
         // List<User> userList =userManager.getAllUser();
-        // for(User a: userList)
-        //     System.out.println(a);
+        // for(User pauseForCorrectAnswerInSignIn: userList)
+        //     System.out.println(pauseForCorrectAnswerInSignIn);
 
     }
 }

@@ -21,10 +21,11 @@ public class Server {
         while (true) {
             try {
                 socket = serverSocket.accept();
+
             } catch (IOException e) {
                 System.out.println("I/O error: " + e);
             }
-            // new thread for a client
+            // new thread for pauseForCorrectAnswerInSignIn client
             ClientHandler clientHandler = new ClientHandler(socket);
             clientHandler.start();
             list.add(clientHandler);

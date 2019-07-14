@@ -17,8 +17,6 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import sample.Main;
-import sample.Server.DB.User;
-import sample.Server.DB.UserManager;
 
 public class SignUp extends Application {
     public static void main(String[] args) {
@@ -120,7 +118,7 @@ public class SignUp extends Application {
                 return;
             }
             if(passwordField.getText().isEmpty()) {
-                showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter a password");
+                showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter pauseForCorrectAnswerInSignIn password");
                 return;
             }
             showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Registration Successful!", "Welcome " + nameField.getText());

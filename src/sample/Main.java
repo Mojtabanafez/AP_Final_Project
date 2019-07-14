@@ -4,17 +4,19 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.SplitPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import sample.View.MainPage;
 import sample.View.SignUp;
 import sample.View.Sign_In;
-
+import sample.View.loading;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Formatter;
 import java.util.Scanner;
 
-public class Main extends Application implements Runnable{
+public class Main extends Application {
     public static int number;
     static Socket socket;
 
@@ -32,6 +34,13 @@ public class Main extends Application implements Runnable{
         try {
             socketIn = new Scanner(socket.getInputStream());
         } catch (IOException e) {
+            loading l = new loading();
+            Stage primaryStage=new Stage();
+            try {
+                l.start(primaryStage);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
             e.printStackTrace();
         }
     }
@@ -46,22 +55,10 @@ public class Main extends Application implements Runnable{
         }
     }
 
-    @Override
-    public void run() {
-        try {
-            do {
-                String received = socketIn.next();
-                System.out.println("received: " + received);
-            } while (true);
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        }
-    }
-
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("View/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("View/Tests/sample.fxml"));
         switch (number) {
             case 0: {
                 primaryStage.setTitle("Registration Form JavaFX Application");
@@ -77,21 +74,24 @@ public class Main extends Application implements Runnable{
                 primaryStage.setTitle("Registration Form JavaFX Application");
                 Sign_In sign_in = new Sign_In();
                 GridPane gridPane = sign_in.createRegistrationFormPane();
-                sign_in.addUIControls(gridPane, primaryStage);
+                sign_in.addUIControls(gridPane , primaryStage);
                 Scene scene = new Scene(gridPane, 800, 900);
                 primaryStage.setScene(scene);
                 primaryStage.show();
             }
             break;
             case 2: {
-                System.out.println("welcome to telegram  @@@ $$ #");
+                SplitPane root2= MainPage.Mainpage();
+                Scene scene = new Scene(root2,800,900);
+                primaryStage.setScene(scene);
+                primaryStage.show();
             }
             break;
             default:
                 System.out.println("nothing!!!!");
         }
     }
-    public void SendMassage(String massage) {
+    public void SendMassage(String massage){
         try {
             socketOut.format(massage + "\n");
             socketOut.flush();
@@ -100,6 +100,8 @@ public class Main extends Application implements Runnable{
         }
     }
     public static void main(String[] args) {
+        Thread thread = new LisstenToMassage(socket);
+        thread.start();
         launch(args);
     }
 }
