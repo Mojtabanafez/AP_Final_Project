@@ -6,6 +6,7 @@ import java.util.Formatter;
 import java.util.Scanner;
 
 public class Client extends Thread {
+
     static Socket socket;
 
     static {
@@ -49,8 +50,7 @@ public class Client extends Thread {
         }
     }
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
         try {
             Scanner systemIn = new Scanner(System.in);
             String next;
@@ -67,8 +67,7 @@ public class Client extends Thread {
             System.out.println(e.toString());
         }
     }
-
-    public static void SendMassage(String massage) {
+    public static void SendMassage(String massage){
         try {
             socketOut.format(massage + "\n");
             socketOut.flush();

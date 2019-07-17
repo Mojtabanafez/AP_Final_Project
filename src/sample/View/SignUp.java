@@ -17,6 +17,7 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import sample.Main;
+import sample.Server.DB.User;
 
 public class SignUp extends Application {
     public static void main(String[] args) {
@@ -26,12 +27,12 @@ public class SignUp extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Registration Form JavaFX Application");
         GridPane gridPane = createRegistrationFormPane();
-        addUIControls(gridPane , primaryStage );
+        addUIControls(gridPane , primaryStage ,new User());
         Scene scene = new Scene(gridPane, 800, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-    public void addUIControls(GridPane gridPane , Stage primaryStage ) {
+    public void addUIControls(GridPane gridPane , Stage primaryStage , User accountOwner) {
         Label headerLabel = new Label("Sign Up");
         headerLabel.setFont(Font.font("Arial", FontWeight.BOLD, 24));
         gridPane.add(headerLabel, 0,0,2,1);
@@ -57,6 +58,7 @@ public class SignUp extends Application {
         TextField userNameField = new TextField();
         userNameField.setPrefHeight(40);
         gridPane.add(userNameField, 1, 3);
+        System.out.println("Mojtaba");
 
         Label emailLable = new Label("Email : ");
         gridPane.add(emailLable, 0, 4);
@@ -123,10 +125,17 @@ public class SignUp extends Application {
             }
             showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Registration Successful!", "Welcome " + nameField.getText());
 
-
             Main main=new Main();
             String Information = "SignUp" + "^" + emailField.getText() + "^" + LastNameField.getText() + "^" + passwordField.getText() + "^" + userNameField.getText() + "^" + nameField.getText();
             main.SendMassage(Information);
+            String id = main.ReceivedMessage();
+            accountOwner.setId(Integer.parseInt(id));
+            accountOwner.setName(nameField.getText());
+            accountOwner.setUserName(userNameField.getText());
+            accountOwner.setLastName(LastNameField.getText());
+            accountOwner.setEmail(emailField.getText());
+            accountOwner.setPassword(passwordField.getText());
+
 
             Main.number=2;
             primaryStage.close();
@@ -137,7 +146,7 @@ public class SignUp extends Application {
                 e.printStackTrace();
             }
             return;
-        });
+            });
     }
     public GridPane createRegistrationFormPane() {
         GridPane gridPane = new GridPane();

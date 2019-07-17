@@ -7,5 +7,5 @@ import java.util.List;
 public class PV {
     private User sender;
     private User receiver;
-    private List <Massage> massages = new ArrayList<>();
+    private List <PrivateMassage> privateMassages = new ArrayList<>();
 }

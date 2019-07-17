@@ -15,9 +15,9 @@ public class DBTester  {
         groupManager.Upadate(newGroup);
         System.out.println(groupManager.getGroup(3));
 
-        //  MassageManager massageManager = new MassageManager();
+        //  PrivateMassageManager massageManager = new PrivateMassageManager();
         // System.out.println(massageManager.getAllMassage());
-      /*  Massage massage =new Massage();
+      /*  PrivateMassage massage =new PrivateMassage();
         UserManager userManager = new UserManager();
         massage.setUser(userManager.getUser(13));
         massage.setDate("1988/05/04");
@@ -27,11 +27,11 @@ public class DBTester  {
         //System.out.println(massageManager.getMassage(3));
 */
 /*
-        Massage newMassage = massageManager.getMassage(4);
+        PrivateMassage newMassage = massageManager.getMassage(4);
         newMassage.setText("In THe name Of God");
         massageManager.Update(newMassage);
-        List<Massage>massages= massageManager.getAllMassage();
-        for(Massage pauseForCorrectAnswerInSignIn: massages)
+        List<PrivateMassage>massages= massageManager.getAllMassage();
+        for(PrivateMassage pauseForCorrectAnswerInSignIn: massages)
             System.out.println(pauseForCorrectAnswerInSignIn);
         // Example for UserManager:
       */

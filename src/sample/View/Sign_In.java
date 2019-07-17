@@ -16,10 +16,8 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-import sample.LisstenToMassage;
 import sample.Main;
-
-import java.util.concurrent.TimeUnit;
+import sample.Server.DB.User;
 
 public class Sign_In extends Application {
     public static void main(String[] args) {
@@ -30,13 +28,13 @@ public class Sign_In extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Registration Form JavaFX Application");
         GridPane gridPane = createRegistrationFormPane();
-        addUIControls(gridPane, primaryStage);
+        addUIControls(gridPane, primaryStage , new User());
         Scene scene = new Scene(gridPane, 800, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public void addUIControls(GridPane gridPane, Stage primaryStage) {
+    public void addUIControls(GridPane gridPane, Stage primaryStage , User SignInUser ) {
         Label headerLabel = new Label("Sign In");
         headerLabel.setFont(Font.font("Arial", FontWeight.BOLD, 24));
         gridPane.add(headerLabel, 0, 0, 2, 1);
@@ -90,20 +88,39 @@ public class Sign_In extends Application {
 
         submitButton.setOnAction(event -> {
 
-            if (userNameField.getText().isEmpty()) {
-                showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter your username");
-                return;
-            }
-            if (passwordField.getText().isEmpty()) {
-                showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter pauseForCorrectAnswerInSignIn password");
-                return;
-            }
+                    if (userNameField.getText().isEmpty()) {
+                        showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter your username");
+                        return;
+                    }
+                    if (passwordField.getText().isEmpty()) {
+                        showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter pauseForCorrectAnswerInSignIn password");
+                        return;
+                    }
 
-            String Massage = "SignIn" + "^" + passwordField.getText() + "^" + userNameField.getText();
-            Main main = new Main();
-            main.SendMassage(Massage);
+                    String Massage = "SignIn" + "^" + passwordField.getText() + "^" + userNameField.getText();
+                    Main main = new Main();
+                    main.SendMassage(Massage);
 
-            while (LisstenToMassage.pauseForCorrectAnswerInSignIn ==0){
+                    String receivedMessage = main.ReceivedMessage();
+                    System.out.println(receivedMessage);
+                    String[] Massages = receivedMessage.split("\\^");
+                    if (Massages[0].equals("SignIn")) {
+                        if (Massages[1].equals("not_found_user")) {
+                            showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "This Account dose not exist!!!!");
+
+                            return;
+                        } else {
+
+                            SignInUser.setName(Massages[1]);
+                            SignInUser.setEmail(Massages[2]);
+                            SignInUser.setLastName(Massages[3]);
+                            SignInUser.setPassword(Massages[4]);
+                            SignInUser.setId(Integer.parseInt(Massages[5]));
+                            SignInUser.setProfileAddress(Massages[6]);
+                            SignInUser.setUserName(Massages[7]);
+                        }
+                    }
+  /*          while (LisstenToMassage.pauseForCorrectAnswerInSignIn ==0){
             //    System.out.println(45);
                 try {
                     TimeUnit.MILLISECONDS.sleep(100);
@@ -118,7 +135,8 @@ public class Sign_In extends Application {
                 LisstenToMassage.SignInOk=1;
                 return;
             }
-            //showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Registration Successful!", "Welcome ");
+*/
+            showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Registration Successful!", "Welcome ");
             primaryStage.close();
             Main.number = 2;
             try {

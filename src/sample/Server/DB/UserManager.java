@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserManager {
+
     public void Insert(User user){
         try{
             PreparedStatement ps = DBConnector.getConnection().prepareStatement(
@@ -68,6 +69,34 @@ public class UserManager {
     }
         return result;
 }
+
+    public  User getUser(String userName){
+        User result= new User();
+        try {
+            PreparedStatement ps = DBConnector.getConnection().prepareStatement(
+                    "select * from  ap_final_project.public.users where username=? ");
+            ps.setString(1,userName);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                result.setId(rs.getInt(("id")));
+                result.setName(rs.getString("name"));
+                result.setLastName(rs.getString("lastName"));
+                result.setEmail(rs.getString("email"));
+                result.setPassword(rs.getString("password"));
+                result.setUserName(rs.getString("userName"));
+                result.setProfileAddress(rs.getString("profileAddress"));
+            }
+            ps.execute();
+            System.out.println("read from DB");
+            rs.close();
+            ps.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("can not find user or failed in this way!!!!");
+        }
+        return result;
+    }
     public User getUser(int id){
 
         User result= new User();

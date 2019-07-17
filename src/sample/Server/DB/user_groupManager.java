@@ -1,5 +1,5 @@
 package sample.Server.DB;
 
-public class user_groupManager {
+public class user_groupManager{
 
 }

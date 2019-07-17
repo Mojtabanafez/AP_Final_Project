@@ -7,19 +7,20 @@ import javafx.scene.Scene;
 import javafx.scene.control.SplitPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import sample.Server.DB.User;
 import sample.View.MainPage;
 import sample.View.SignUp;
 import sample.View.Sign_In;
-import sample.View.loading;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Formatter;
 import java.util.Scanner;
 
 public class Main extends Application {
+
+    static User accountOwner = new User();
     public static int number;
     static Socket socket;
-
     static {
         try {
             socket = new Socket("127.0.0.1", 1978);
@@ -29,18 +30,10 @@ public class Main extends Application {
     }
 
     static Scanner socketIn;
-
     static {
         try {
             socketIn = new Scanner(socket.getInputStream());
         } catch (IOException e) {
-            loading l = new loading();
-            Stage primaryStage=new Stage();
-            try {
-                l.start(primaryStage);
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
             e.printStackTrace();
         }
     }
@@ -55,33 +48,33 @@ public class Main extends Application {
         }
     }
 
-
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         Parent root = FXMLLoader.load(getClass().getResource("View/Tests/sample.fxml"));
         switch (number) {
             case 0: {
                 primaryStage.setTitle("Registration Form JavaFX Application");
                 SignUp signUp = new SignUp();
                 GridPane gridPane = signUp.createRegistrationFormPane();
-                signUp.addUIControls(gridPane, primaryStage);
+                signUp.addUIControls(gridPane, primaryStage , accountOwner);
                 Scene scene = new Scene(gridPane, 800, 900);
                 primaryStage.setScene(scene);
                 primaryStage.show();
             }
             break;
-            case 1: {
+            case 1:{
                 primaryStage.setTitle("Registration Form JavaFX Application");
                 Sign_In sign_in = new Sign_In();
                 GridPane gridPane = sign_in.createRegistrationFormPane();
-                sign_in.addUIControls(gridPane , primaryStage);
+                sign_in.addUIControls(gridPane , primaryStage , accountOwner);
                 Scene scene = new Scene(gridPane, 800, 900);
                 primaryStage.setScene(scene);
                 primaryStage.show();
             }
             break;
             case 2: {
-                SplitPane root2= MainPage.Mainpage();
+                SplitPane root2= MainPage.Mainpage(accountOwner);
                 Scene scene = new Scene(root2,800,900);
                 primaryStage.setScene(scene);
                 primaryStage.show();
@@ -91,6 +84,10 @@ public class Main extends Application {
                 System.out.println("nothing!!!!");
         }
     }
+    public String ReceivedMessage(){
+        String received = socketIn.nextLine();
+        return received;
+    }
     public void SendMassage(String massage){
         try {
             socketOut.format(massage + "\n");
@@ -99,9 +96,7 @@ public class Main extends Application {
             System.out.println(e.toString());
         }
     }
-    public static void main(String[] args) {
-        Thread thread = new LisstenToMassage(socket);
-        thread.start();
+    public static void main(String[] args){
         launch(args);
     }
 }
