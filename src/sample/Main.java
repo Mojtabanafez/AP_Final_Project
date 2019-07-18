@@ -23,11 +23,12 @@ public class Main extends Application {
     static Socket socket;
     static {
         try {
-            socket = new Socket("127.0.0.1", 1978);
-        } catch (IOException e) {
+            socket = new Socket("127.0.0.1", 1998);
+        } catch (IOException e){
             e.printStackTrace();
         }
     }
+
 
     static Scanner socketIn;
     static {
@@ -50,9 +51,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         Parent root = FXMLLoader.load(getClass().getResource("View/Tests/sample.fxml"));
-        switch (number) {
+        switch (number){
             case 0: {
                 primaryStage.setTitle("Registration Form JavaFX Application");
                 SignUp signUp = new SignUp();
@@ -73,7 +73,7 @@ public class Main extends Application {
                 primaryStage.show();
             }
             break;
-            case 2: {
+            case 2:{
                 SplitPane root2= MainPage.Mainpage(accountOwner);
                 Scene scene = new Scene(root2,800,900);
                 primaryStage.setScene(scene);
@@ -88,6 +88,7 @@ public class Main extends Application {
         String received = socketIn.nextLine();
         return received;
     }
+
     public void SendMassage(String massage){
         try {
             socketOut.format(massage + "\n");

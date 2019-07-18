@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Server {
-    static final int PORT = 1978;
+    static final int PORT = 1998;
     public static List<ClientHandler> list = new ArrayList<>();
     public static ServerSocket serverSocket = null;
 

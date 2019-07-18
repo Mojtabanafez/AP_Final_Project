@@ -19,8 +19,8 @@ public class PrivateMassageManager {
         privateMassage.setDate("1396/asfd3404/12");
         privateMassage.setText("nasdfawerwerewrtrfez");
         privateMassage.setId(7);
-        List<User> a = privateMassageManager.RelativeUsers(23);
-        System.out.println(a);
+        //List<User> a = privateMassageManager.RelativeUsers(23);
+      //  System.out.println(a);
         //System.out.println(privateMassageManager.getMassage(7));
         //   privateMassageManager.Update(privateMassage);
         //       privateMassageManager.Delete(5);
@@ -29,11 +29,45 @@ public class PrivateMassageManager {
         //   for(PrivateMassage a:list)
         //     System.out.println(a);
 
+        System.out.println(privateMassageManager.getMessages(41,3).size());
+    }
+
+    public List<PrivateMassage> getMessages(int user_id_receiver, int user_id_sender) {
+        List<PrivateMassage> privateMassages = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = DBConnector.getConnection().prepareStatement(
+                    "select * from privatemassage where ( ( user_id_receiver=? AND user_id_sender=? ) or ( user_id_receiver=? AND user_id_sender=? ) )");
+            ps.setInt(1, user_id_receiver);
+            ps.setInt(2,user_id_sender);
+            ps.setInt(3,user_id_sender);
+            ps.setInt(4,user_id_receiver);
+            ResultSet rs = ps.executeQuery();
+            UserManager userManager = new UserManager();
+            while (rs.next()) {
+                PrivateMassage result = new PrivateMassage();
+                result.setId(rs.getInt("id"));
+                result.setText(rs.getString("text"));
+
+                result.setDate(rs.getString("date"));
+                result.setUser_id_receiver((rs.getInt("user_id_receiver")));
+                result.setUser_id_sender(rs.getInt("user_id_sender"));
+                privateMassages.add(result);
+            }
+            ps.execute();
+            System.out.println("read list of books from db");
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error in representing All of PrivateMassage@#$");
+        }
+        return privateMassages;
     }
 
     public List<User> RelativeUsers(int accountOwnerId) {
         List<Integer> result = new ArrayList<>();
-        List<User>users = new ArrayList<>();
+        List<User> users = new ArrayList<>();
         try {
             PreparedStatement ps = DBConnector.getConnection().prepareStatement
                     ("select * from privatemassage where user_id_receiver=?");
@@ -58,7 +92,7 @@ public class PrivateMassageManager {
 
             result = result.stream().distinct().collect(Collectors.toList());
 
-            for(int tmp : result)
+            for (int tmp : result)
                 users.add(userManager.getUser(tmp));
 
         } catch (Exception e) {

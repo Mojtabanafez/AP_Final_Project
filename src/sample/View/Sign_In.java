@@ -7,9 +7,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.*;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Priority;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -20,6 +19,8 @@ import sample.Main;
 import sample.Server.DB.User;
 
 public class Sign_In extends Application {
+    private final static Background focusBackground2 = new Background( new BackgroundFill( Color.web( "#00FFFF" ), CornerRadii.EMPTY, Insets.EMPTY ));
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -38,6 +39,7 @@ public class Sign_In extends Application {
         Label headerLabel = new Label("Sign In");
         headerLabel.setFont(Font.font("Arial", FontWeight.BOLD, 24));
         gridPane.add(headerLabel, 0, 0, 2, 1);
+        gridPane.setBackground(focusBackground2);
         GridPane.setHalignment(headerLabel, HPos.CENTER);
         GridPane.setMargin(headerLabel, new Insets(20, 0, 20, 0));
         // Add Name Label
