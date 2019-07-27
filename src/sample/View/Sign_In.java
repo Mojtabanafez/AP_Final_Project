@@ -104,7 +104,6 @@ public class Sign_In extends Application {
                     main.SendMassage(Massage);
 
                     String receivedMessage = main.ReceivedMessage();
-                    System.out.println(receivedMessage);
                     String[] Massages = receivedMessage.split("\\^");
                     if (Massages[0].equals("SignIn")) {
                         if (Massages[1].equals("not_found_user")) {

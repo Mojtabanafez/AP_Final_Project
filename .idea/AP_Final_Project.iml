@@ -3,19 +3,14 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/App/out" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/App/resourc" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/App/src/com" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/res" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/localRepository/PostgreSQL/postgresql-42.2.6.jar!/" />
+          <root url="jar://$USER_HOME$/localRepository/javafx-0.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,27 +23,6 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <NATIVE>
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" />
-        </NATIVE>
-        <SOURCES>
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.base" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.controls" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.fxml" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.graphics" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.media" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.swing" />
-          <root url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib/src/javafx.web" />
-        </SOURCES>
-        <jarDirectory url="file://$USER_HOME$/Downloads/openjfx-12.0.1_linux-x64_bin-sdk/javafx-sdk-12.0.1/lib" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -69,5 +43,15 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/localRepository/PostgreSQL/postgresql-42.2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

@@ -1,15 +1,11 @@
 package sample.Server.DB;
 
 
-import sample.Server.DB.Group;
-import sample.Server.DB.PV;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class User {
     private List<Group> groups = new ArrayList<>();
-    private List<PV> pvs = new ArrayList<>();
     private String name;
     private String lastName;
     private String email;
@@ -42,8 +38,6 @@ public class User {
         return id;
     }
 
-    public void setPvs(List<PV> pvs) {this.pvs = pvs;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -71,10 +65,6 @@ public class User {
 
     public List<Group> getGroups() {
         return groups;
-    }
-
-    public List<PV> getPvs() {
-        return pvs;
     }
 
     public String getName() {

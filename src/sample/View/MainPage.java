@@ -26,6 +26,7 @@ public class MainPage extends Application {
         Scene scene = new Scene(root, 800, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
+        System.out.println();
     }
 
     public static SplitPane Mainpage(User accountOwner){
@@ -82,7 +83,7 @@ public class MainPage extends Application {
         groupsAndPv.setAlignment(Pos.CENTER);
 
         Pvs(groupsAndPv, accountOwner , RightVBox , hBox2 ,send ,sendingMassage , vBox2);
-
+        System.out.println("come");
         scrollPaneLeft.setPrefWidth(250);
         scrollPaneLeft.setFitToWidth(true);
         scrollPaneLeft.setContent(groupsAndPv);
@@ -107,7 +108,6 @@ public class MainPage extends Application {
         groupsAndPv.getChildren().clear();
         while (true) {
             String InfUser = main.ReceivedMessage();
-            System.out.println(InfUser);
             String[] Massages = InfUser.split("\\^");
             if (Massages[0].equals("FinishedPvsGroups")) {
                 break;
@@ -121,7 +121,8 @@ public class MainPage extends Application {
                 user.setProfileAddress(Massages[6]);
                 user.setUserName(Massages[7]);
 
-                Image image = new Image("file:/home/mojtaba/Desktop/AP_Final_Project/src/sample/picture/Mydear.jpg");
+
+                Image image = new Image("file:/home/mojtaba/c++ project/AP_Final_Project_96431335_Messenger/AP_Final_Project/src/sample/picture/Mydear.jpg");
                 ImageView imageView = new ImageView(image);
 
                 imageView.setPreserveRatio(true);
@@ -135,7 +136,7 @@ public class MainPage extends Application {
                     Label Namelable = new Label(user.getName());
                     Namelable.setAlignment(Pos.CENTER);
                     Namelable.setFont(Font.font("Arial", FontWeight.BOLD, 24));
-                    Image Profile = new Image("file:/home/mojtaba/Desktop/AP_Final_Project/src/sample/picture/Mydear.jpg");
+                    Image Profile = new Image("file:/home/mojtaba/c++ project/AP_Final_Project_96431335_Messenger/AP_Final_Project/src/sample/picture/Mydear.jpg");
                     ImageView ProfileImageView1 = new ImageView(Profile);
                     ProfileImageView1.setPreserveRatio(true);
                     ProfileImageView1.setFitWidth(100);
@@ -158,6 +159,7 @@ public class MainPage extends Application {
                 pvGroup.setFont(Font.font("Arial", FontWeight.BOLD, 24));
 
                 groupsAndPv.getChildren().add(pvGroup);
+
             }
         }
     }
@@ -201,12 +203,10 @@ public class MainPage extends Application {
     public static User search(Button button, TextField textField, VBox groupsAndPv, VBox vBox2, HBox hBox2, VBox RightVBox, User user , User accountOwner ,Button send , TextField sendingMassage) {
         button.setOnAction(event -> {
             if (!textField.getText().equals("")) {
-                System.out.println(textField.getText());
                 Main main = new Main();
                 String message = "searchUser" + "^" + textField.getText();
                 main.SendMassage(message);
                 String Answer = main.ReceivedMessage();
-                System.out.println("this is answer=" + Answer);
                 String[] Message = Answer.split("\\^");
                 if (!Message[1].equals("not_found_user")) {
                     user.setName(Message[1]);
@@ -216,7 +216,7 @@ public class MainPage extends Application {
                     user.setId(Integer.parseInt(Message[5]));
                     user.setProfileAddress(Message[6]);
                     user.setUserName(Message[7]);
-                    Image image = new Image("file:/home/mojtaba/Desktop/AP_Final_Project/src/sample/picture/Mydear.jpg");
+                    Image image = new Image("file:/home/mojtaba/c++ project/AP_Final_Project_96431335_Messenger/AP_Final_Project/src/sample/picture/Mydear.jpg");
                     ImageView imageView = new ImageView(image);
                     imageView.setPreserveRatio(true);
                     imageView.setFitWidth(100);
@@ -229,7 +229,7 @@ public class MainPage extends Application {
                         Label Namelable = new Label(user.getName());
                         Namelable.setAlignment(Pos.CENTER);
                         Namelable.setFont(Font.font("Arial", FontWeight.BOLD, 24));
-                        Image Profile = new Image("file:/home/mojtaba/Desktop/AP_Final_Project/src/sample/picture/Mydear.jpg");
+                        Image Profile = new Image("file:/home/mojtaba/c++ project/AP_Final_Project_96431335_Messenger/AP_Final_Project/src/sample/picture/Mydear.jpg");
                         ImageView ProfileImageView1 = new ImageView(Profile);
                         ProfileImageView1.setPreserveRatio(true);
                         ProfileImageView1.setFitWidth(100);
@@ -243,7 +243,6 @@ public class MainPage extends Application {
                         if (!sendingMassage.getText().equals("")) {
                             if (user.getName() != null) {
                                 String message2 = "SendMessage" + "^" + user.getId() + "^" + accountOwner.getId() + "^" + sendingMassage.getText();
-                                System.out.println(message2);
                                 main.SendMassage(message2);
                                 updatemassage(accountOwner,user,vBox2);
                             }
